@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  color: #333;
+  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
+}
+
+/* 分页部分的样式 */
+.block {
+  margin-top: 25px;
+  overflow: hidden;
+}
+.block .el-pagination {
+  float: right !important;
+}
+
+/* 首页 */
+  /* 导航菜单样式 */
+  .el-menu-item-group .el-menu-item-group__title {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .el-submenu .el-submenu__title {
+    height: 54px;
+  }
+  .el-submenu__title:hover {
+    background: #fff!important;
+  }
+
+  /* 首页顶部样式 */
+  .main-top .el-input--suffix .el-input__inner {
+    border: none;
+  }
+  .main-top .position .el-input--suffix .el-input__inner{
+    padding-left: 26px;
+  }
+  .main-top .user .el-input--suffix .el-input__inner {
+    padding-left: 40px;
+  }
+
+  /* 首页顶部导航 */
+  .main-nav>.el-tabs>.el-tabs__header {
+    height: 40px;
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  .main-nav .el-tabs__nav-wrap,
+  .main-nav .el-tabs__nav-scroll,
+  .main-nav .el-tabs__nav {
+    height: 100%;
+  }
+  .main-nav>.el-tabs--card>.el-tabs__header {
+    border-bottom: none;
+    width: calc(100% - 49px);
+  }
+  .main-nav>.el-tabs--card>.el-tabs__header .el-tabs__nav-wrap.is-scrollable {
+    padding: 0 49px;
+  }
+  .main-nav>.el-tabs--card>.el-tabs__header .el-tabs__nav-wrap .el-tabs__nav-prev,
+  .main-nav>.el-tabs--card>.el-tabs__header .el-tabs__nav-wrap .el-tabs__nav-next {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    border-right: 1px solid #eee;
+    text-align: center;
+    font-size: 18px;
+  }
+  .main-nav>.el-tabs--card>.el-tabs__header .el-tabs__nav-wrap .el-tabs__nav-prev .el-icon-arrow-left:before {
+    content: "\E610";
+  }
+  .main-nav>.el-tabs--card>.el-tabs__header .el-tabs__nav-wrap .el-tabs__nav-next .el-icon-arrow-right:before {
+    content: "\E613";
+  }
+  .main-nav>.el-tabs--card>.el-tabs__header .el-tabs__nav-wrap .el-tabs__nav-next{
+    border-left: 1px solid #eee;
+    border-right: none;
+  }
+  .main .main-nav>.el-tabs .el-tabs__nav-scroll {
+    padding-right: 49px;
+    box-sizing: border-box;
+  }
+  .main-nav>.el-tabs--card>.el-tabs__header .el-tabs__nav-scroll .el-tabs__nav {
+    border-radius: 0 0 0 0;
+    border: none;
+    border-right: 1px solid #eee;
+  }
+  .main-nav>.el-tabs>.el-tabs__header .el-tabs__nav .el-tabs__item {
+    height: 40px;
+    line-height: 39px;
+  }
+  .main-nav>.el-tabs.el-tabs--card>.el-tabs__header .el-tabs__item:nth-child(1) .el-icon-close {
+    display: none;
+  }
+  .main-nav>.el-tabs--card>.el-tabs__header .el-tabs__item.is-closable{
+    transition: none;
+  }
+  .main-nav>.el-tabs--card>.el-tabs__header .el-tabs__item.is-closable:hover{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .main-nav>.el-tabs>.el-tabs__header .el-tabs__item.is-active {
+    background: #f8f8f8;
+    border-bottom-color: #f8f8f8;
+  }
+  .main-nav>.el-tabs>.el-tabs__content {
+    overflow: scroll;
+    height: calc(100vh - 100px);
+    overflow-x: scroll;
+  }
+  .main-nav>.el-tabs>.el-tabs__content::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #F5F5F5;
+  }
+  .menu::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #F5F5F5;
+  }
+  /* 侧边栏导航 */
+  .menu{
+    width: 196px !important;
+  }
+
+/* 首页顶部导航 */
+.main-nav>.el-tabs>.el-tabs__header {
+  height: 40px;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.main-nav .el-tabs__nav-wrap,
+.main-nav .el-tabs__nav-scroll,
+.main-nav .el-tabs__nav {
+  height: 100%;
+}
+.main-nav>.el-tabs--card>.el-tabs__header {
+  border-bottom: 1px solid #eee;
+  width: calc(100% - 49px);
+}
+.main-nav>.el-tabs--card>.el-tabs__header .el-tabs__nav-wrap.is-scrollable {
+  padding: 0 49px;
+}
+.main-nav>.el-tabs--card>.el-tabs__header .el-tabs__nav-wrap .el-tabs__nav-prev,
+.main-nav>.el-tabs--card>.el-tabs__header .el-tabs__nav-wrap .el-tabs__nav-next {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  border-right: 1px solid #eee;
+  text-align: center;
+}
+.main-nav>.el-tabs--card>.el-tabs__header .el-tabs__nav-wrap .el-tabs__nav-next{
+  border-left: 1px solid #eee;
+  border-right: none;
+}
+.main .main-nav>.el-tabs .el-tabs__nav-scroll {
+  padding-right: 49px;
+  box-sizing: border-box;
+}
+.main-nav>.el-tabs--card>.el-tabs__header .el-tabs__nav-scroll .el-tabs__nav {
+  border-radius: 0 0 0 0;
+  border: none;
+  border-right: 1px solid #eee;
+}
+.main-nav>.el-tabs>.el-tabs__header .el-tabs__nav .el-tabs__item {
+  height: 40px;
+  line-height: 39px;
+}
+.main-nav>.el-tabs.el-tabs--card>.el-tabs__header .el-tabs__item:nth-child(1) .el-icon-close {
+  display: none;
+}
+.main-nav>.el-tabs--card>.el-tabs__header .el-tabs__item.is-closable{
+  transition: none;
+}
+.main-nav>.el-tabs--card>.el-tabs__header .el-tabs__item.is-closable:hover{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.main-nav>.el-tabs>.el-tabs__header .el-tabs__item.is-active {
+  background: #f8f8f8;
+  border-bottom-color: #f8f8f8;
+}
+
+  /* 楼盘管理 --户型 */
+/* 公共样式 */
+  .none {
+    display: none;
+  }
+  .el-card{
+    box-shadow: none !important;
+  }
+
+  /* 设置滚动条样式 */
+
+  /*定义滚动条轨道 内阴影+圆角*/
+  ::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background-color: #F5F5F5;
+  }
+
+  /*定义滑块 内阴影+圆角*/
+  ::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #b2b2b2;
+  }
+

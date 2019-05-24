@@ -1,0 +1,19 @@
+import Vue from 'vue'
+import Router from 'vue-router'
+import index from '../view/index.vue'
+Vue.use(Router)
+
+export default new Router({
+  mode: 'history',
+  routes: [
+    {
+      path: '/',
+      name: 'index',
+      component: index,
+      meta: {
+        title: '房源管理平台'
+      }
+    },
+  
+  ]
+})
